@@ -23,13 +23,14 @@ export default function Register() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
+    <div className="login-container">
+      <div className="login-left">
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 rounded-xl shadow-md w-80 space-y-4"
+        className="login-form"
       >
-        <h2 className="text-2xl font-bold text-center">Register</h2>
-        {error && <p className="text-red-500 text-sm">{error}</p>}
+        <h2 className="login-title">Register</h2>
+        {error && <p className="error-text">{error}</p>}
         <input
           type="email"
           placeholder="Email"
@@ -55,17 +56,22 @@ export default function Register() {
         </select>
         <button
           type="submit"
-          className="bg-green-600 text-white p-2 rounded w-full hover:bg-green-700"
+          className="login-btn"
         >
           Sign Up
         </button>
-        <p className="text-sm text-center">
+        <p className="signup-text">
           Already have an account?{" "}
-          <Link className="text-blue-600" to="/login">
+          <Link className="/register" to="/login">
             Login
           </Link>
         </p>
       </form>
+      </div>
+      <div className="login-right">
+        <h1>Welcome to <span>The Register Portal</span></h1>
+        <p>Fill In Register Info</p>
+      </div>
     </div>
   );
 }
