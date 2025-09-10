@@ -76,7 +76,7 @@ export default function Login() {
           Welcome to <span>student portal</span>
         </h1>
         <p>Login to access your account</p>
-        <img src="/student-illustration.svg" alt="Student portal" />
+        <img src="/transparent_background.png" alt="Student portal" />
       </div>
     </div>
   );

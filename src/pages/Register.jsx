@@ -71,6 +71,8 @@ export default function Register() {
       <div className="login-right">
         <h1>Welcome to <span>The Register Portal</span></h1>
         <p>Fill In Register Info</p>
+        <img src="/transparent_background.png" alt="Student portal" />
+
       </div>
     </div>
   );
