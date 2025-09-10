@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-left {
+  width: 50%;
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 320px;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-subtitle {
+  color: #aaa;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.login-form input,
+.login-form select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #444;
+  margin-bottom: 20px;
+  padding: 10px 5px;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  outline: none;
+  border-bottom: 1px solid #a06ef7;
+}
+
+.login-form select {
+  background-color: #222;
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid #444;
+}
+
+.forgot-password {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  background-color: #a06ef7;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #8b54e9;
+}
+
+.signup-text {
+  font-size: 0.85rem;
+  color: #bbb;
+  text-align: center;
+}
+
+.signup-link {
+  margin-left: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.login-right {
+  width: 50%;
+  background-color: #a06ef7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.login-right h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.login-right span {
+  color: #fff;
+}
+
+.login-right p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.login-right img {
+  max-width: 60%;
+}
